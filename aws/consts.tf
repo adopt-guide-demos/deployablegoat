@@ -2,7 +2,7 @@
 data "aws_caller_identity" "current" {}
 
 variable "company_name" {
-  default = "acme"
+  default = "adopt-guide-demos"
 }
 
 variable "environment" {
