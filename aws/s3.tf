@@ -37,9 +37,16 @@ resource "aws_s3_bucket" "operations" {
   }
   force_destroy = true
   tags = {
-    Name        = "${local.resource_prefix.value}-operations"
-    Environment = local.resource_prefix.value
-    yor_trace   = "4534313c-6d0d-457d-b928-4c89689fb08a"
+    Name                 = "${local.resource_prefix.value}-operations"
+    Environment          = local.resource_prefix.value
+    yor_trace            = "4534313c-6d0d-457d-b928-4c89689fb08a"
+    git_commit           = "N/A"
+    git_file             = "aws/s3.tf"
+    git_last_modified_at = "2023-03-07 03:00:12"
+    git_last_modified_by = "gbrandyburg@paloaltonetworks.com"
+    git_modifiers        = "gbrandyburg"
+    git_org              = "adopt-guide-demos"
+    git_repo             = "deployablegoat"
   }
 
 }
